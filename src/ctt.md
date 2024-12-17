@@ -60,7 +60,17 @@
 3. Hal ini menjadi aman jika kita selalu membuat ResourceBundle terus menerus
 
 
+# I18N DI DATE DAN TIME
 
+1. I18N di tipe data String mungkin sederhana, bagaimana jika tipe data Date atau Waktu?
+2. Di Java kita tahu bahwa tipe data Date dan Time direpresentasikan dalam class Date
+3. Bagaimana misal jika kita ingin menampilkan tanggal dalam bahasa Indonesia, bahasa Inggris, atau yang lainnya?
+4. Di Java, I18N di Date sudah disediakan menggunakan DateFormatter
+
+¥ DateFormat Class
+1. DateFormat merupakan class yang bisa kita gunakan untuk melakukan parsing dari String ke Date, atau format dari Date ke String
+2. DateFormat mendukung I18N jika misal kita ingin melakukan format dan parse, sehingga bisa menerima hari dengan data Sunday, Monday atau Minggu, Senin
+3. DateFormat adalah abstract class, salah satu implementasinya adalah class SimpleDateFormat
 
 
 
