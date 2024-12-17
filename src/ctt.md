@@ -31,3 +31,41 @@
 
 1. Penulisan negara di Locale menggunakan ISO 3166 alpha-2
 2. https://www.iban.com/country-codes 
+
+# RESOURCE BUNDLE
+
+1. ResourceBundle adalah class yang digunakan sebagai bundle yang berisikan data yang bisa berubah sesuai dengan Locale yang dipilih.
+2. ResourceBundle cocok digunakan untuk menyimpan data I18N, dimana semua data akan disimpan dalam sebuah properties file
+
+¥ Properties File
+1. Saat kita menggunakan ResourceBundle, kita perlu membuat properties file di dalam resources sebagai tempat untuk ResourceBundle melakukan lookup data
+2. Misal kita membuat file properties dengan nama message.properties di dalam resources
+
+
+¥ I18N di ResourceBundle
+1. Kode sebelumnya kita hanya menggunakan ResourceBundle sebagai object untuk mengambil data dari properties file, kalo seperti ini tidak ada bedanya dengan class Properties
+2. Yang membedakan, dalam ResourceBundle, kita bisa melakukan I18N
+3. Namun untuk melakukan itu, kita perlu menyediakan properties file sesuai dengan Locale nya
+4. Misal jika kita ingin mendukung bahasa in dan negara ID, maka kita perlu membuat message_in_ID.properties.
+5. File nya butuh diawali dengan message karena sebelumnya kita menggunakan nama file message.properties
+
+¥ Jika Tidak ada Properties untuk Locale
+1. Apa yang terjadi jika ada Locale yang tidak tersedia dalam file properties nya?
+2. Misal kita akan menggunakan Locale en_US, sedangkan tidak ada file message_en_US.properties nya?
+3. Jika itu terjadi, secara default ResourceBundle akan menggunakan message.properties
+
+¥ Amankah Membuat ResourceBundle Terus?
+1. Cara membuat ResourceBundle menggunakan static method getBundle()
+2. Di dalam implementasi getBundle() telah diimplementasikan caching, artinya jika kita mengambil resource yang sama dengan locale yang sama, tidak akan dibuat ulang, melainkan akan menggunakan ResourceBundle yang sudah tersedia
+3. Hal ini menjadi aman jika kita selalu membuat ResourceBundle terus menerus
+
+
+
+
+
+
+
+
+
+
+
