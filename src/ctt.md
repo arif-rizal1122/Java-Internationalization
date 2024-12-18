@@ -124,8 +124,16 @@ https://docs.oracle.com/javase/8/docs/api/java/text/MessageFormat.html
 3. Sebelumnya kita sudah tahu, bahwa kita bisa melakukan I18N di Number dan Date, apakah ini juga bisa kita lakukan di MessageFormat?
 4. Jawabanya adalah iya, kita bisa lakukan itu, namun perlu ada beberapa perubahan
 
+# CHOICE FORMAT
 
-    
+1. ChoiceFormat class adalah class yang digunakan untuk menyematkan data dengan range number, biasanya ini digunakan untuk kata plurals, misal jika 1 namanya file, jika banyak namanya files
+2. Pembuatan pattern untuk ChoiceFormat sangat sederhana, cukup gunakan number#value atau number<value, dan urutannya harus dari kecil ke besar, dan dipisahkan menggunakan tanda | (pagar), misal :
+3. -1#negatif | 0#kosong | 1#satu | 1<banyak
+
+¥ ChoiceFormat di MessageFormat
+Seperti yang sudah kita bahas di MessageFormat
+ChoiceFormat juga didukung di MessageFormat, kita cukup gunakan type 
+ 
 
 
 
