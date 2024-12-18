@@ -116,8 +116,16 @@
 2. Namun, kita juga bisa mengkombinasikan dengan ResourceBundle, dan menyimpan pattern nya di dalam ResourceBundle properties file
 3. Dengan demikian, MessageFormat seakan-akan memiliki kemampuan I18N
 
+# MESSAGE FORMAT TYPE
+https://docs.oracle.com/javase/8/docs/api/java/text/MessageFormat.html
+
+1. Materi sebelumnya kita sudah membahas tentang MessageFormat untuk melakukan substitusi data.
+2. Bagaimana jika datanya bentuknya adalah Number atau Date?
+3. Sebelumnya kita sudah tahu, bahwa kita bisa melakukan I18N di Number dan Date, apakah ini juga bisa kita lakukan di MessageFormat?
+4. Jawabanya adalah iya, kita bisa lakukan itu, namun perlu ada beberapa perubahan
 
 
+    
 
 
 
