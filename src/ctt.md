@@ -97,6 +97,38 @@
 5. Constructor Currency class adalah private, jadi untuk membuat Currency, kita harus menggunakan static method getInstance()
 
 
+# MESSAGE FORMAT
+
+1. Ketika melakukan I18N, kadang kita membutuhkan data yang bentuknya dinamis, sesuai dengan parameter, misal kita butuh String Hi {nama}, Selamat Datang di {aplikasi}
+2. Jika kita menggunakan Resource Bundle, hal tersebut tidak bisa dilakukan secara otomatis, kita perlu melakukannya secara manual, dengan cara menggabungkan beberapa String
+3. Untungnya di Java terdapat class bernama MessageFormat
+4. MessageFormat class ini digunakan untuk melakukan substitusi data parameter, namun data string awalnya perlu ditambahkan penanda parameter
+
+¥ Parameter di MessageFormat
+1. Penggunakann parameter di MessageFormat, menggunakan kurung kurawal buka, diikuti dengan index (dimulai dari 0) dan diakhiri dengan kurung kurawal tutup, misal :
+2. Hi {0}, Selamat Datang di {1}
+3. Jika kita menggunakan nomor index yang sama, artinya data akan menggunakan parameter yang sama, misal :
+4. Hi {0}, Anda bisa mencari data Anda dengan mengetik “{0}” di pencarian. 
+
+
+¥ Integrasi Dengan ResourceBundle
+1. Sebenarnya sekilas kita perhatikan jika MessageFormat itu tidak ada hubungannya dengan I18N
+2. Namun, kita juga bisa mengkombinasikan dengan ResourceBundle, dan menyimpan pattern nya di dalam ResourceBundle properties file
+3. Dengan demikian, MessageFormat seakan-akan memiliki kemampuan I18N
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
