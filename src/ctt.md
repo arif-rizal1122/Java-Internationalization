@@ -83,6 +83,35 @@
 2. NumberFormat adalah abstract class, untuk membuat object NumberFormat, kita bisa menggunakan static method getInstance() milik class NumberFormat
 
 
+# I18N DI CURRENCY
+
+1. Java juga mendukung I18N untuk mata uang atau currency
+2. Ada 2 class yang bisa kita gunakan untuk melakukan I18N di Java, yaitu class Currency dan class NumberFormat
+
+
+¥ Currency class
+1. Currency class adalah implementasi standard dari ISO 4217 currency codes
+2. https://www.iso.org/iso-4217-currency-codes.html
+3. Dengan menggunakan class ini, kita bisa mengetahui nama mata uang, kode mata uang sampai simbol yang digunakan
+4. Untuk membuat object Currency, kita wajib menggunakan Locale yang memiliki negara, karena memang mata uang tergantung dari negaranya, bukan bahasanya
+5. Constructor Currency class adalah private, jadi untuk membuat Currency, kita harus menggunakan static method getInstance()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
