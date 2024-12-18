@@ -72,6 +72,18 @@
 2. DateFormat mendukung I18N jika misal kita ingin melakukan format dan parse, sehingga bisa menerima hari dengan data Sunday, Monday atau Minggu, Senin
 3. DateFormat adalah abstract class, salah satu implementasinya adalah class SimpleDateFormat
 
+# I18N DI NUMBER
+
+1. Apakah perlu I18N di number?
+2. Yup perlu, karena kadang beda bahasa beda format penulisan number nya.
+3. Contoh, di Indonesia menggunakan . (titik) sebagai pemisah ribuan, dan , (koma) untuk pemisah bilangan pecahan, sedangkan di Amerika, itu terbalik
+
+¥ NumberFormat Class
+1. Untuk melakukan I18N di Java, kita bisa menggunakan class NumberFormat
+2. NumberFormat adalah abstract class, untuk membuat object NumberFormat, kita bisa menggunakan static method getInstance() milik class NumberFormat
+
+
+
 
 
 
